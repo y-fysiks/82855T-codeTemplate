@@ -37,7 +37,6 @@ inline pros::Optical color_sense(optical_port);
 //controller
 inline pros::Controller master(CONTROLLER_MASTER);
 //pneumatics
-//autonomous state indicator
 
 //------------------------------------------------------------------------------
 //GREATAPI objects and variables

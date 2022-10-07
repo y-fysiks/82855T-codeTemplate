@@ -85,31 +85,7 @@ void opcontrol() {
 	intake.set_brake_mode(pros::E_MOTOR_BRAKE_HOLD);
 	
 	while (true) {
-		/*
-		//get hue for color spinny thing
-		double hue = color_sense.get_hue();
-		double proximity = color_sense.get_proximity();
-		if(proximity >= 220){
-			//also for spinning, we need to place our optical sensor quite early to fight delay
-			//conditionals for if robot is red team or not, check globals.hpp for this variable
-			if(red_team){
-				if(isRed(hue)) {
-					spinner_motor.move(0);
-				}
-				else{
-					spinner_motor.move(127);
-				}
-			}
-			else {
-				if(isRed(hue)) {
-					spinner_motor.move(127);
-				}
-				else {
-					spinner_motor.move(0);
-				}
-			}
-		}
-		*/
+		// X drive
 		//get turn, left right, front back values for movement in x drive, then move motors accordingly using diagram below
 		//http://fabacademy.org/2019/labs/kannai/students/kota-tomaru/images/final/wheelpatterns.jpg
 		int front_back = master.get_analog(ANALOG_LEFT_Y);
